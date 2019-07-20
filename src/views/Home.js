@@ -28,10 +28,10 @@ export default function Home() {
     return (
         <div>
             <header className="App-header">
-              {/* <Link to={'/create/'+JSON.stringify(new Date()).slice(1,-2)}>
+              <Link to={'/create/'+JSON.stringify(new Date()).slice(1,-2)}>
                 <h1>Parkir</h1>
-              </Link> */}
-              <h1>Parkir</h1>
+              </Link>
+              {/* <h1>Parkir</h1> */}
               <img style={{width:'200px', height:'200px'}} src={logo} className="App-logo" alt="logo" />
               <img style={{width:'500px', height:'500px'}} alt='qrcode' id="img" />
             </header>

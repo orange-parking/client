@@ -11,7 +11,6 @@ const CreateParkReserve = (props) => {
             nopol: null
         })
         .then((data) => {
-            console.log(props.history)
             props.history.replace('/user/'+data.id)
         })
     },[])
