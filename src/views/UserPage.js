@@ -16,13 +16,13 @@ export default function UserPage(props) {
             img.src = url2
             setUrl(url2)
             console.log(url2)
-            hitGVision('https://firebasestorage.googleapis.com/v0/b/parkirhusni.appspot.com/o/platnomor%2Fplat5.jpg?alt=media&token=05f4c87e-d7d5-40fc-908e-f59055d9368e',id)
+            hitGVision('https://firebasestorage.googleapis.com/v0/b/parkirhusni.appspot.com/o/platnomor%2Fplat12.jpg?alt=media&token=669b3b28-0d04-44a0-b3cb-9e2cf41bb13a',id)
           })
     },[])
 
     function hitGVision(url,id){
         axios
-        .post('https://vision.googleapis.com/v1/images:annotate?key=AIzaSyDG55WGni8p3GyKugYcmBYsxGYVxVkpL8U',{"requests": [
+        .post('https://vision.googleapis.com/v1/images:annotate?key='+process.env.REACT_APP_APIKEY,{"requests": [
                 {
                     "image": {
                     "source": {
